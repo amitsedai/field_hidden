@@ -1,0 +1,5 @@
+Field Hidden 8.x-1.x
+
+New features
+------------
+None. A basic port of Field Hidden module to Drupal 8.

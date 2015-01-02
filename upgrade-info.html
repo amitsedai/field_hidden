@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,700,600' rel='stylesheet' type='text/css' />
+    <style type="text/css">
+    <!--
+
+body {
+  width: 80%;
+  color: #343434;
+  margin: 1em auto;
+  font-family: 'Open Sans', Verdana, sans-serif;
+}
+
+details {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 2em;
+}
+
+details summary {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+details.error summary {
+  background-color: #ffd5d5;
+}
+
+details.warning summary {
+  background-color: #fff3bb;
+}
+
+a {
+  color: #095cb1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+aside {
+  font-style: italic;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+.group {
+  border: 1px solid #ececec;
+  padding: 1em;
+}
+
+.group > summary {
+  padding: 0;
+  color: #c8c8c8;
+  margin-bottom: 0;;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.group[open] > summary {
+  margin-bottom: 1em;
+}
+
+.group > details:last-child {
+  margin-bottom: 0;
+}
+
+    -->
+    </style>
+  </head>
+  <body>
+      <details open="true" class="group">
+      <summary>Configuration</summary>
+          <details class="error">
+      <summary><code>variable_get()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2183531">The Variable API has been removed</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.admin.inc, line 26</li>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 286</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:variable_get</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Field API</summary>
+          <details class="error">
+      <summary><code>hook_field_formatter_info()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1805846">Field formatters are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 592</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_formatter_info</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_formatter_settings_form()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1805846">Field formatters are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 634</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_formatter_settings_form</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_formatter_settings_summary()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1805846">Field formatters are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 703</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_formatter_settings_summary</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_formatter_view()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1805846">Field formatters are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 736</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_formatter_view</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_info()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2064123">Field types are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 64</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_info</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_instance_settings_form()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2064123">Field types are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 224</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_instance_settings_form</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_is_empty()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2064123">Field types are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 565</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_is_empty</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_presave()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2064123">Field types are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 538</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_presave</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_schema()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2064123">Field types are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.install, line 8</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_schema</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_settings_form()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2064123">Field types are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 164</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_settings_form</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_validate()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2064123">Field types are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 338</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_validate</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_widget_error()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1796000">Field widgets are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 854</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_widget_error</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_widget_form()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1796000">Field widgets are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 820</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_widget_form</aside>    </details>
+    <details class="error">
+      <summary><code>hook_field_widget_info()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1796000">Field widgets are now plugins</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 798</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:field_widget_info</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Form API</summary>
+          <details class="error">
+      <summary><code>drupal_map_assoc()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2207453"><code>drupal_map_assoc()</code> removed</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 185</li>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 193</li>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 690</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:drupal_map_assoc</aside>    </details>
+    <details class="error">
+      <summary><code>form_error()</code> is now a method of <code>FormStateInterface</code>.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2121003">Form functions moved into <code>FormStateInterface</code></a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 319</li>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 334</li>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 864</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:form_error</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Info File</summary>
+          <details class="error">
+      <summary>Module info files' <code>core</code> key must have a value of <code>8.x</code>.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1935708"><code>.info</code> files are now <code>.info.yml</code> files</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.info</li>
+            </ul>
+      
+      <aside>Flagged by info</aside>    </details>
+    <details class="error">
+      <summary>Info files must contain a <code>type</code> key.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1935708#type"><code>.info</code> files are now <code>.info.yml</code> files</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.info</li>
+            </ul>
+      
+      <aside>Flagged by info</aside>    </details>
+    <details class="error">
+      <summary>Module info files' <code>configure</code> key must be a route name, not a path.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1935708#configure"><code>.info</code> files are now <code>.info.yml</code> files</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.info</li>
+            </ul>
+      
+      <aside>Flagged by info</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Menu/Routing</summary>
+          <details class="error">
+      <summary><code>hook_menu()</code> has been removed from Drupal 8.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1800686">All functionality of <code>hook_menu()</code> replaced</a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2177901">Dynamic routes are now defined in <code>MODULE.routing.yml</code></a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2119699">Page callbacks have been converted to controller classes</a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2089605">Route naming convention</a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2165243">Contextual links are now plugins defined in <code>MODULE.links.contextual.yml</code></a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2007444">Local actions are now plugins defined in <code>MODULE.links.action.yml</code></a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2044515">Local tasks and now plugins defined in <code>MODULE.links.task.yml</code></a></li>
+                <li><a target="_blank" href="https://www.drupal.org/node/2228089">Menu links are now defined in <code>MODULE.links.menu.yml</code></a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 21</li>
+            </ul>
+      
+      <aside>Flagged by _flag_hook:menu</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Miscellaneous</summary>
+          <details class="warning">
+      <summary>Many common functions, shared variables, and constants have been renamed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2324935">The global theme variables have been replaced by an ActiveTheme object</a></li>
+              </ul>
+      
+      
+          </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Rendering</summary>
+          <details class="error">
+      <summary><code>drupal_add_css()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2169605"><code>drupal_add_css()</code> removed</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.admin.inc, line 64</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:drupal_add_css</aside>    </details>
+    <details class="error">
+      <summary><code>format_plural()</code> was moved into the translation service.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2173787"><code>format_plural()</code> moved to translation service</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 760</li>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 761</li>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 773</li>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 774</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:format_plural</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>System</summary>
+          <details class="error">
+      <summary><code>l()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2346779"><code>l()</code> replaced by URL generation API</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.admin.inc, line 20</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:l</aside>    </details>
+    <details class="error">
+      <summary><code>url()</code> has been removed.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2346779"><code>url()</code> replaced by URL generation API</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.admin.inc, line 49</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:url</aside>    </details>
+    <details class="warning">
+      <summary>Static permissions are now defined in <code>MODULE.permissions.yml</code>.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/2311427">Defining permissions in <code>MODULE.permissions.yml</code></a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 7</li>
+            </ul>
+      
+      <aside>Flagged by hook_permission</aside>    </details>
+
+    </details>
+      <details open="true" class="group">
+      <summary>Utilities</summary>
+          <details class="error">
+      <summary><code>drupal_strlen()</code> has been moved into the Unicode utility class.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1992584"><code>drupal_strlen()</code> moved into Unicode component</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 383</li>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 387</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:drupal_strlen</aside>    </details>
+    <details class="error">
+      <summary><code>drupal_validate_utf8()</code> has been moved into the Unicode utility class.</summary>
+
+      
+            <h5>Documentation</h5>
+      <ul>
+                <li><a target="_blank" href="https://www.drupal.org/node/1992584"><code>drupal_validate_utf8()</code> moved into Unicode component</a></li>
+              </ul>
+      
+            <h5>Files Affected</h5>
+      <ul>
+              <li>/var/www/drupal8dev/modules/field_hidden/field_hidden.module, line 376</li>
+            </ul>
+      
+      <aside>Flagged by _function_call:drupal_validate_utf8</aside>    </details>
+
+    </details>
+    </body>
+</html>

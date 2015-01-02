@@ -1,0 +1,9 @@
+name: 'Field Hidden'
+description: 'Defines hidden field types.'
+package: Fields
+core: 8.x
+stylesheets:
+  all:
+    - field_hidden.css
+type: module
+configure: field_hidden.config.fields.hidden

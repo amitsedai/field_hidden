@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Drupal Field Hidden module
+ */
+
+use Drupal\Component\Utility\String;
+
+/**
+ * Implements hook_help().
+ * @param $route_name
+ * @return string|void
+ */
+function field_hidden_help($route_name) {
+  switch ($route_name) {
+    case 'help.page.field_hidden':
+      module_load_include('inc', 'field_hidden', 'field_hidden.admin');
+      return _field_hidden_help($route_name);
+  }
+}

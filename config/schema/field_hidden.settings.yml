@@ -1,0 +1,6 @@
+field_hidden.settings:
+  type: mapping
+  label: Settings
+  mapping:
+    field_hidden_instance_settings_hide_defval:
+      type: boolean

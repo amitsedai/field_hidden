@@ -1,0 +1,8 @@
+field_hidden.config.fields.hidden:
+  path: 'admin/config/fields/field_hidden'
+  defaults:
+    _form: '\Drupal\field_hidden\Form\FieldHiddenConfigForm'
+    _title: 'Hidden Fields'
+    _description: 'Configure Fields Hidden.'
+  requirements:
+    _permission: 'field hidden administer'

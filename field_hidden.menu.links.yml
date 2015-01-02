@@ -1,0 +1,11 @@
+field_hidden.settings:
+  route_name: field_hidden.settings
+  title: 'Fields'
+  parent: system.admin_config
+  description: 'Field type settings and utilities.'
+  weight: -15
+field_hidden.config.fields.hidden:
+  route_name: field_hidden.config.fields.hidden
+  title: 'Hidden Fields'
+  parent: field_hidden.settings
+  description: 'Configure Fields Hidden.'

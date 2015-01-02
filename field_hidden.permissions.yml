@@ -1,0 +1,3 @@
+'field hidden administer':
+  title: 'Administer hidden fields'
+  'restrict access': true
