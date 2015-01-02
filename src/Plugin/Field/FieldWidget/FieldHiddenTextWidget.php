@@ -44,13 +44,10 @@ class FieldHiddenTextWidget extends StringTextfieldWidget{
       }
     }
 
-
     $element['#format'] = isset($items[$delta]->format) ? $items[$delta]->format : NULL;
     $element['#base_type'] = $main_widget['value']['#type'];
     return $element;
   }
 }
-
-
 
 

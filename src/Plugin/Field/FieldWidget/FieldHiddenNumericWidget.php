@@ -50,5 +50,4 @@ class FieldHiddenNumericWidget extends NumberWidget {
     }
     return array('value' => $element);
   }
-
 }

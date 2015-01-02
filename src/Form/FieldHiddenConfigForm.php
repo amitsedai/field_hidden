@@ -56,5 +56,4 @@ class FieldHiddenConfigForm extends ConfigFormBase {
       ->set('field_hidden_instance_settings_hide_defval', $form_state->getValue('field_hidden_instance_settings_hide_defval'))
       ->save();
   }
-
 }
