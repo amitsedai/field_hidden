@@ -26,7 +26,7 @@ class FieldHiddenConfigForm extends ConfigFormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['field_hidden_help'] = array(
       '#type' => 'markup',
-   //   '#markup' => '<p>' . \Drupal::l(t('Help/Readme'), Url::fromRoute('help.page.field_hidden')) . '</p><p><hr/></p>',
+      '#markup' => '<p>' . \Drupal::l($this->t('Help/Readme'), Url::fromRoute('help.page', ['name' => 'field_hidden'])) . '</p><p><hr/></p>',
     );
     $form['field_hidden_instance_settings_hide_defval'] = array(
       '#type' => 'checkbox',

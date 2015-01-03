@@ -14,8 +14,8 @@ use Drupal\Core\Form\FormStateInterface;
  * Plugin implementation of the 'field_hidden' widget.
  * @FieldWidget(
  *  id = "field_hidden_numeric",
- *  label = @Translation("Hidden field Numeric"),
- *  field_types = {"field_hidden_integer", "field_hidden_decimal", "field_hidden_float"}
+ *  label = @Translation("Hidden Field"),
+ *  field_types = {"integer", "decimal", "float"}
  * )
  */
 class FieldHiddenNumericWidget extends NumberWidget {
@@ -24,20 +24,8 @@ class FieldHiddenNumericWidget extends NumberWidget {
    * {@inheritdoc}
    */
   public function formElement(FieldItemListInterface $items, $delta, array $element, array &$form, FormStateInterface $form_state) {
-    $parent_element = parent::formElement($items, $delta,  $element, $form, $form_state);
-    $element = $parent_element['value'];
-    $field_settings = $this->getFieldSettings();
-
-    // Set the step for floating point and decimal numbers.
-    switch ($this->fieldDefinition->getType()) {
-      case 'field_hidden_decimal':
-        $element['#step'] = pow(0.1, $field_settings['scale']);
-        break;
-
-      case 'field_hidden_float':
-        $element['#step'] = 'any';
-        break;
-    }
+    $main_widget = parent::formElement($items, $delta, $element, $form, $form_state);
+    $element = $main_widget['value'];
 
     if($form_state->getFormObject()->getFormId() != 'field_ui_field_edit_form'){
       $element['#type'] = 'hidden';

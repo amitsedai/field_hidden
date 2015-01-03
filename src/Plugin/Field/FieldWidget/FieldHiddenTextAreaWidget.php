@@ -1,24 +1,24 @@
 <?php
 /**
  * @file
- * Contains \Drupal\field_hidden\Plugin\Field\FieldWidget\FieldHiddenTextWidget.
+ * Contains \Drupal\field_hidden\Plugin\Field\FieldWidget\FieldHiddenTextAreaWidget.
  */
 
 namespace Drupal\field_hidden\Plugin\Field\FieldWidget;
 
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Field\Plugin\Field\FieldWidget\StringTextfieldWidget;
+use Drupal\Core\Field\Plugin\Field\FieldWidget\StringTextareaWidget;
 
 /**
  * Plugin implementation of the 'field_hidden' widget.
  * @FieldWidget(
- *  id = "field_hidden_string",
+ *  id = "field_hidden_string_long",
  *  label = @Translation("Hidden Field"),
- *  field_types = {"string"}
+ *  field_types = {"string_long"}
  * )
  */
-class FieldHiddenTextWidget extends StringTextfieldWidget{
+class FieldHiddenTextAreaWidget extends StringTextareaWidget {
   /**
    * {@inheritdoc}
    */
@@ -28,7 +28,7 @@ class FieldHiddenTextWidget extends StringTextfieldWidget{
     $element['#type'] = 'hidden';
 
     if($form_state->getFormObject()->getFormId() == 'field_ui_field_edit_form'){
-      $element['#type'] = 'textfield';
+      $element['#type'] = 'textarea';
       $field_hidden_settings = \Drupal::config('field_hidden.settings')->get('field_hidden_instance_settings_hide_defval');
       if($field_hidden_settings == 1){
         $element['#type'] = 'hidden';
@@ -36,6 +36,5 @@ class FieldHiddenTextWidget extends StringTextfieldWidget{
     }
     return $element;
   }
+
 }
-
-
